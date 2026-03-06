@@ -1,0 +1,103 @@
+
+@media (max-width: 991px){
+
+    #home-page-principal-product{
+        margin-top: 100px;;
+        position: static;
+        transform: none;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    #first{
+        height: 400px;
+        object-fit: cover;
+    }
+
+}
+
+.hero-wrapper h1 {
+  color: white;
+}
+
+
+
+.section-x-full {
+  margin: 30px;
+}
+
+.flex {
+  gap: 5px;
+  display: flex;
+  z-index: 2;
+}
+
+.product-item{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  margin: 20px;
+}
+
+.flex-col {
+  flex-direction: column;
+  background-color: white;
+  border: 3px solid white;
+  margin: 15px;
+  transition: 0.3s ease-out;
+}
+
+.info-p5 {
+  background-color: whitesmoke;
+  border: 2px solid white;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 5px;
+  border: 1px solid black;
+  transition: 0.3s ease;
+}
+
+.product {
+  width: 250px;
+  background-color: rgb(248, 233, 217);
+  border-radius: 30px;
+}
+
+.caption {
+  font-size: small;
+  color: grey;
+}
+
+figcaption {
+  font-size: larger;
+}
+
+.introduction  {
+  background-color: rgb(160, 160, 160);
+  color: black;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.new-model {
+  display: flex;
+}
+
+.apex-introduction {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 15px;
+}
+
+.apex-content {
+  padding: 60px;
+}
+
+.apex-series {
+  height: 450px;
+  object-fit: cover;
+}
