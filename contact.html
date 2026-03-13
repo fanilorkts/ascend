@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ascend | Contact us </title>
-    <link rel="icon" type="image/png" href="images/Gemini_Generated_Image_3uid83uid83uid83.png">
+    <link rel="icon" type="image" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Varela+Round&display=swap" rel="stylesheet">
@@ -129,19 +129,49 @@
 
     <main>
         <!--Conteneur du formulaire de contact-->
-        <div class="contact-container container rounded-5">
-            <img class="contact-image object-fit-cover rounded-5 shadow" src="images/contactUs.png" alt="Contact Us">
+        <div class="contact-container container rounded-5 align-items-center ">
+            <div <i class="contact-info align-items-center">
+                <img class="contact-image object-fit-cover rounded-5 shadow ms-5" src="images/contactUs.png" alt="Contact Us">
+                <div class="map container m-3">
+                    <iframe class="shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5247.774996917204!2d2.32644667623483!3d48.87942117133504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e4bd2fba1a7%3A0xddf00270789d0061!2sH3%20Campus!5e0!3m2!1sfr!2sfr!4v1773397459695!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact-info container d-flex my-1 ms-5">
+                    <div class="phone container d-flex gap-1">
+                        <p><i class="fa-classic fa-solid fa-phone"></i></p>
+                        <a>+1 (888) 888-8888</p>
+                    </div>
+                    <div class="email container d-flex gap-1">
+                        <p><i class="fa-classic fa-solid fa-envelope"></i></p>
+                        <a>contact@ascend.com</p>
+                    </div>
+                </div>
+            </div>
             <form>
                 <h1 class="h1 mb-3 fw-bold">Contact Us !</h1>
-                
-                <div class="input-form form-floating">
-                    <input type="email" class="form-control border-0 bg-transparent" id="floatingInput" placeholder="name@example.com" />
-                    <label for="floatingInput">Email address</label>
+
+                <div class="firstname-name container col-6 mb-5 d-flex w-100">
+                    <div class="name input">
+                        <input type="text" class="form-control border-0 bg-transparent" id="floatingName" placeholder="Name:">
+                    </div>
+                    <div class="firstname input">
+                        <input type="text" class="form-control border-0 bg-transparent" id="floatingFirstname" placeholder="Firstname:"/>
+                    </div>
                 </div>
                 
-                <div class="input-form form-floating">
-                    <textarea name="Message" id="" class="form-control border-0 bg-transparent" placeholder="Write your message here..."></textarea>
-                    <label for="floatingInput">Write your for us Message Here...</label>
+                <div class="phone-email d-flex col-6 mb-5 d-flex w-100">
+                    <div class="phone input">
+                        <input type="tel" class="form-control border-0 bg-transparent" id="floatingPhone" placeholder="Phone Number* : " required />
+                    </div>
+                    <div class="email input">
+                        <input type="email" class="form-control border-0 bg-transparent" id="floatingEmail" placeholder="Email* :" required />
+                    </div>
+                </div>
+                <div class="subject input">
+                    <input type="text" class="form-control border-0 bg-transparent" id="floatingSubject" placeholder="Subject:" required />
+                </div>
+                <div class="input-form form-floating input  ">
+                    <p class="m-3"> Your Message : </p>
+                    <textarea name="Message" id="message" class="form-control border-1 border-black bg-transparent h-100" placeholder="Write your message here... :" required></textarea>
                 </div>
                 
                 <button class="btn w-100 py-2 rounded-5" type="submit">Send</button>
